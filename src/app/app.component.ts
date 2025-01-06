@@ -7,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+  public title = 'Hola Mundo';
+  public counter: number = 10;
+
+  increasedBy( value: number ): void {
+    this.counter += value;
+  }
+
+  decreasedBy( value: number): void {
+    this.counter -= value;
+  }
+
+  reset (): void {
+    this.counter = 10;
+  }
 }
